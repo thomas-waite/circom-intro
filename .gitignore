@@ -4,3 +4,7 @@ circuit.sym
 circuit.wasm
 proving_key.json
 verification_key.json
+witness.json
+proof.json
+public.json
+verifier.sol

@@ -6,7 +6,13 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "compile": "circom ./circuits/circuit.circom --r1cs --wasm --sym"
+    "compile": "circom ./circuits/circuit.circom --r1cs --wasm --sym",
+    "setup": "snarkjs setup",
+    "witness": "snarkjs calculatewitness --wasm circuit.wasm --input input.json --witness witness.json",
+    "proof": "snarkjs proof",
+    "verify": "snarkjs verify",
+    "generateVerifier": "snarkjs generateverifier",
+    "generateTx": "snarkjs generatecall"
   },
   "dependencies": {
     "circom": "^0.5.11",
